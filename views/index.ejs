@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WDI Student Fun Facts</title>
+  <!-- Google Icon Fonts used by Materialize -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css"/>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="right">
+        <$ if (user) { $>
+          <li><a href="/logout"><i class="material-icons left">trending_flat</i>Logout</a></li>
+          <$ } else { $>
+          <li><a href="/auth/google"><i class="material-icons left">vpn_key</i>Login</a></li>
+          <$ } $>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+
+  <!-- jQuery (required by Materialize) -->
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <!-- Using Underscore for collection manipulation and client-side templatin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <!-- JavaScript for Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="javascripts/app.js"></script>
+
+</body>
+</html>
