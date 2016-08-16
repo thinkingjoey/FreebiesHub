@@ -67,7 +67,7 @@ h1{
   /* Rectangle 3 Copy: */
   background: rgba(73, 143, 225, 0.85);
   border-radius: 20px;
-  font-family: BritannicBold;
+  font-family: 'Lalezar', cursive;
   font-size: 22px;
   height: 40px;
   width: 135px;
@@ -106,8 +106,8 @@ height: 50px;
 margin-right: 1%;
 margin-top: 2%;
 margin-bottom: 2%;
-font-family: BritannicBold;
-font-size: 20px;
+font-family: 'Lalezar', cursive;
+font-size: 18px;
 border: 1px solid #CFCFC9;
 color: grey;
 text-align: center;
@@ -117,10 +117,10 @@ text-align: center;
   width: 37%;
 }
 #location {
-  width: 24%;
+  width: 22%;
 }
 #date {
-width: 20%;
+width: 22%;
 }
 #submit {
 width: 14%;
