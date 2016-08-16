@@ -77,7 +77,6 @@ h1{
   margin-right: auto;
   margin-top: 15%;
   color: #FFFFFF;
-<<<<<<< HEAD
   position: absolute;
   top: 60%;
   left: 45%;
@@ -87,6 +86,7 @@ h1{
     display: inline-block;
     margin-top: 50px;
     font-family: BritannicBold;
+    color: white;
     text-align:center;
     line-height:175px;
     width:300px;
@@ -94,18 +94,6 @@ h1{
     font-size:50px;
   }
 
-  .download a {
-  text-decoration: none;
-  color: white;
-}
-
-.download a:hover {
-    text-decoration: none;
-    border-bottom: solid 2px white;
-    display: inline;
-    padding-bottom: 3px;
-    color: white;
-}
 
 #ibooks {
   background-image: url("../images/ibooks.jpeg");
@@ -133,10 +121,7 @@ h1{
   left: 0px;
   right: 0px;
   }
-=======
-  position: relative;;
 
-}
 a:active {
   color: white;
 }
@@ -184,4 +169,21 @@ width: 14%;
 background-color: rgba(73, 143, 225, 0.85);
 color: white;
 }
->>>>>>> 9cad92bbdb1f5dee12c0492d4d5fe7c6bc152090
+
+#ibookslist {
+  background-color: rgba(73, 143, 225, 0.85);
+  display: inline-block;
+  margin-top: 50px;
+  font-family: BritannicBold;
+  color: white;
+  width:300px;
+  height:175px;
+  font-size:20px;
+  margin-left: 150px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 20px;
+}
