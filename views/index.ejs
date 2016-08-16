@@ -8,25 +8,15 @@
 </head>
 <body>
     <!-- navbar for login -->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-              <$ if (user) { $>
-              <div class="Login">
-              <button type="button">
-                <a href="/logout">Logout</a>
-              </button>
-            </div>
-            <div class="Login">
-              <button type="button" class="Login">
-              <$ } else { $>
-              <a href="/auth/google">Login</a>
-              <$ } $>
-            </button>
-          </div>
-          </div>
-      </nav>
-    </div>
+    <div class="Login">
+      <$ if (user) { $>
+      <a href="/logout">Logout</a> / <a href="/auth/google">Sign Up</a>
+  </div>
+  <div class="Login">
+      <$ } else { $>
+      <a href="/auth/google">Login</a> / <a href="/auth/google">Sign Up</a>
+      <$ } $>
+  </div>
     <!-- header for cover page -->
     <header>
       <div class="container">
@@ -37,7 +27,6 @@
           </h1>
       </div>
     </header>
-
     <!-- free event search -->
     <div id="search">
         <div id="freeEvent">
