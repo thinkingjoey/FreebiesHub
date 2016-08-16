@@ -1,92 +1,83 @@
-.brand-logo {
-  margin-left: 15px;
-}
-
-.student .card-title {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  margin-top: -18px;
-  }
-
-  nav{
-    background-color: black;
-  }
-
-  #header{
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-  }
-
-  #Cover{
-  width: 100%;
-  height: 10%;
-  z-index: -5;
-  margin: 0 auto;
-  }
-
-  /*freebies hub*/
-  #title{
-  font-family: HanziPenSC-W3;
-  font-size: 65px;
-  z-index: 1;
-  color: white;
-  top: 20%;
-  left: 38%;
+header {
+  height: 560px;
+  background: url('../images/freeCover.jpeg')
+  no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  margin: 0 auto;
-  /*text-align: center;*/
-  }
+}
 
-  /*nothing is too good to be true*/
-  #subtitle{
+.Login{
+  background-color: black;
+  float: right;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*position: relative;*/
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+#moreFree{
+  height: 400px;
+  background: url('../images/events.png')
+  no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+#container{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+/*freebies hub*/
+#title{
+  font-family: HanziPenSC-W3;
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  clear: both;
+}
+
+#subtitle {
   font-family: 'Courier New';
   font-size: 15px;
-  color: #F7F3F2;
-  letter-spacing: 0px;
-  z-index: 1;
   color: white;
-  top: 32%;
-  left: 40%;
-  rigt: 50%;
-  position: absolute;
-  }
+}
 
-  .Login{
-    font-family: 'Courier New';
-    font-size: 20px;
-    color: #F7F3F2;
-    letter-spacing: 0px;
-    z-index: 1;
-    color: white;
-    top: 5%;
-    left: 85%;
-    border: 1px solid white;
-    border-radius: 10px;
-    height: 20px;
-    width: 60px;
-    padding-top: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    margin: 0 auto;
-  }
-
-  #signup_button{
+#signup_button {
   border-radius: 40px;
   /* Rectangle 3 Copy: */
-  background: rgba(73,143,225,0.85);
+  background: rgba(73, 143, 225, 0.85);
   border-radius: 20px;
   font-family: BritannicBold;
-  font-size: 18px;
+  font-size: 22px;
   height: 40px;
   width: 135px;
   padding: 10px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
   color: #FFFFFF;
+<<<<<<< HEAD
   position: absolute;
   top: 60%;
   left: 45%;
@@ -142,3 +133,55 @@
   left: 0px;
   right: 0px;
   }
+=======
+  position: relative;;
+
+}
+a:active {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+
+#search{
+  height: 80px;
+}
+
+/*search boxes for free event*/
+#freeEvent {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#category, #location, #date, #submit {
+display: block;
+border-radius: 10px;
+float: left;
+height: 50px;
+margin-right: 1%;
+margin-top: 2%;
+margin-bottom: 2%;
+font-family: BritannicBold;
+font-size: 20px;
+border: 1px solid #CFCFC9;
+color: grey;
+text-align: center;
+}
+#category {
+  margin-left: 1%;
+  width: 37%;
+}
+#location {
+  width: 24%;
+}
+#date {
+width: 20%;
+}
+#submit {
+width: 14%;
+background-color: rgba(73, 143, 225, 0.85);
+color: white;
+}
+>>>>>>> 9cad92bbdb1f5dee12c0492d4d5fe7c6bc152090
