@@ -23,7 +23,9 @@
 
 //our codes start here
 var router = require('express').Router();
+var eventsController = require('../controllers/events')
 
+router.get('/events', eventsController.index)
 
 //GET
 
