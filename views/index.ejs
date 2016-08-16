@@ -10,11 +10,11 @@
     <!-- navbar for login -->
     <div class="Login">
       <$ if (user) { $>
-      <a href="/logout">Logout</a> / <a href="/auth/google">Sign Up</a>
+      <a href="/logout">Logout</a> / <a href="/auth/google">Register</a>
   </div>
   <div class="Login">
       <$ } else { $>
-      <a href="/auth/google">Login</a> / <a href="/auth/google">Sign Up</a>
+      <a href="/auth/google">Login</a> / <a href="/auth/google">Register</a>
       <$ } $>
   </div>
     <!-- header for cover page -->
@@ -30,10 +30,11 @@
     <!-- free event search -->
     <div id="search">
         <div id="freeEvent">
-            <input type="category" id="category" placeholder="category">
+            <input type="category" id="category" placeholder="search for events">
             <input type="location" id="location" placeholder="location">
             <input type="date" id="date" placeholder="date">
             <button id="submit">Submit</button>
+
         </div>
     </div>
     <div id="moreFree">

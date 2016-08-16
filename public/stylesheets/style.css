@@ -1,5 +1,5 @@
 header {
-  height: 500px;
+  height: 560px;
   background: url('../images/freeCover.jpeg')
   no-repeat center fixed;
   -webkit-background-size: cover;
@@ -14,7 +14,6 @@ header {
   background-color: black;
   float: right;
   padding: 20px;
-
 }
 
 h1{
@@ -26,9 +25,10 @@ h1{
   text-align: center;
   z-index: 1;
 }
+
 #moreFree{
-  height: 500px;
-  background: url('../images/freeCover.jpeg')
+  height: 400px;
+  background: url('../images/events.png')
   no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,9 +47,9 @@ h1{
 }
 
 /*freebies hub*/
-#title {
+#title{
   font-family: HanziPenSC-W3;
-  font-size: 65px;
+  font-size: 75px;
   color: white;
   text-align: center;
   z-index: 1;
@@ -68,14 +68,14 @@ h1{
   background: rgba(73, 143, 225, 0.85);
   border-radius: 20px;
   font-family: BritannicBold;
-  font-size: 18px;
+  font-size: 22px;
   height: 40px;
   width: 135px;
   padding: 10px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   color: #FFFFFF;
   position: relative;;
 
@@ -87,11 +87,17 @@ a:visited {
   color: white;
 }
 
+#search{
+  height: 80px;
+}
+
+/*search boxes for free event*/
 #freeEvent {
   width: 80%;
   display: block;
   margin: 0 auto;
 }
+
 #category, #location, #date, #submit {
 display: block;
 border-radius: 10px;
@@ -100,19 +106,24 @@ height: 50px;
 margin-right: 1%;
 margin-top: 2%;
 margin-bottom: 2%;
+font-family: BritannicBold;
+font-size: 20px;
+border: 1px solid #CFCFC9;
+color: grey;
+text-align: center;
 }
 #category {
   margin-left: 1%;
-  width: 23%;
+  width: 37%;
 }
 #location {
   width: 24%;
 }
 #date {
-width: 24%;
+width: 20%;
 }
 #submit {
-width: 24%;
+width: 14%;
 background-color: rgba(73, 143, 225, 0.85);
 color: white;
 }
