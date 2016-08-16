@@ -1,4 +1,4 @@
-//don't touch 
+//don't touch
 //Google API stuffs here
 
 var router = require('express').Router();
@@ -7,6 +7,14 @@ var passport = require('passport');
 // The root route renders our only view
 router.get('/', function(req, res) {
   res.render('index', { user: req.user });
+});
+
+router.get('/trials', function(req, res) {
+  res.render('trials', { user: req.user });
+});
+
+router.get('/ebooks', function(req, res) {
+  res.render('ebooks', { user: req.user });
 });
 
 // Google OAuth login route
