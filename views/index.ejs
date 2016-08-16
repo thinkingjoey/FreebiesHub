@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Freebies Hub</title>
-    <!-- Google Icon Fonts used by Materialize -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize CSS Framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- Bootstrap framework -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-
 <body>
+    <!-- navbar for login -->
     <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <ul class="right">
-                    <$ if (user) { $>
-                        <li class="Login"><a href="/logout"><i class="material-icons left">trending_flat</i>Logout</a></li>
-                        <$ } else { $>
-                            <li class="Login"><a href="/auth/google">Login</a></li>
-                            <$ } $>
-                </ul>
+      <nav>
+        <div class="nav-wrapper">
+              <$ if (user) { $>
+              <div class="Login">
+              <button type="button">
+                <a href="/logout">Logout</a>
+              </button>
             </div>
-        </nav>
+            <div class="Login">
+              <button type="button" class="Login">
+              <$ } else { $>
+              <a href="/auth/google">Login</a>
+              <$ } $>
+            </button>
+          </div>
+          </div>
+      </nav>
     </div>
-    <div id="header">
-        <img id=Cover src="images/freeCover.jpeg" alt="freeCover">
-        <!-- <div id="Login">log in </div> -->
-        <div id="title"> Freebies Hub </div>
-        <div id="subtitle"> Nothing is too good to be true </div>
-        <div id="signup_button"> Sign Up </div>
-    </div>
+    <!-- header for cover page -->
+    <header>
+      <div class="container">
+          <h1 id="title"> Freebies Hub </h1>
+          <h1 id="subtitle"> Nothing is too good to be true </h1>
+          <h1 id="signup_button">
+              <a href="/auth/google">Sign Up</a>
+          </h1>
+      </div>
+    </header>
+
+    <!-- free event search -->
     <div id="search">
-        <div id="freeEvent">Search for free event
+        <div id="freeEvent">
+            <input type="category" id="category" placeholder="category">
+            <input type="location" id="location" placeholder="location">
+            <input type="date" id="date" placeholder="date">
+            <button id="submit">Submit</button>
         </div>
-        <div id="moreFree">
-        </div>
-        <div class="download" id="ibooks">
-        </div>
-        <div class="download" id="samples">
-        </div>
-        <div class="download" id="coupons">
-        </div>
+    </div>
+    <div id="moreFree">
+    </div>
+    <div class="download" id="ibooks">
+    </div>
+    <div class="download" id="samples">
+    </div>
+    <div class="download" id="coupons">
+    </div>
 
-
-
-
-  <!-- jQuery (required by Materialize) -->
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <!-- Using Underscore for collection manipulation and client-side templatin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <!-- JavaScript for Materialize -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <script src="javascripts/app.js"></script>
+    <!-- jQuery (required by Materialize) -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- Using Underscore for collection manipulation and client-side templatin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="javascripts/app.js"></script>
 
 </body>
+
 </html>
