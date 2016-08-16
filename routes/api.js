@@ -25,7 +25,7 @@
 var router = require('express').Router();
 var eventsController = require('../controllers/events')
 
-router.get('/events', eventsController.index)
+router.post('/events', eventsController.index)
 
 //GET
 

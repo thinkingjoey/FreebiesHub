@@ -140,7 +140,7 @@ a:visited {
   margin: 0 auto;
 }
 
-#category, #location, #date, #submit {
+#location, #radius, #date1, #date2, #keywords, #submit {
 display: block;
 border-radius: 10px;
 float: left;
@@ -149,23 +149,26 @@ margin-right: 1%;
 margin-top: 2%;
 margin-bottom: 2%;
 font-family: 'Lalezar', cursive;
-font-size: 18px;
+font-size: 12px;
 border: 1px solid #CFCFC9;
 color: grey;
 text-align: center;
 }
-#category {
-  margin-left: 1%;
-  width: 37%;
-}
 #location {
-  width: 22%;
+  width: 25%;
 }
-#date {
-width: 22%;
+#radius {
+  width: 10%;
+}
+#date1, #date2 {
+width: 15%;
+}
+#keywords {
+  margin-left: 1%;
+  width: 20%;
 }
 #submit {
-width: 14%;
+width: 7%;
 background-color: rgba(73, 143, 225, 0.85);
 color: white;
 }
