@@ -32,11 +32,14 @@
     <!-- free event search -->
     <div id="search">
         <div id="freeEvent">
-            <input type="category" id="category" placeholder="search for events">
-            <input type="location" id="location" placeholder="location">
-            <input type="date" id="date" placeholder="date">
+            <input type="text" id="location" placeholder=" zip code -OR- city, state">
+            <input type="number" id="radius" placeholder="radius (mi)">
+            <input type="date" id="date1" placeholder="first date">
+            <input type="date" id="date2" placeholder="last date">
+            <input type="text" id="keywords" placeholder="search keywords">
             <button id="submit">Submit</button>
-        </div>
+        </div><br>
+        <div id="results"></div>
     </div>
     <!-- slideshow -->
     <div id="moreFree">
@@ -111,7 +114,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <!-- JavaScript for Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="javascripts/index.js"></script>
+    <script src="javascripts/app.js"></script>
 
 </body>
 

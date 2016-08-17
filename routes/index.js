@@ -1,8 +1,16 @@
+var express = require('express');
+
 //don't touch
 //Google API stuffs here
 
-var router = require('express').Router();
+var router = express.Router();
 var passport = require('passport');
+
+// Billy told us to add these two lines to display
+// Google user ID.  Since this is the _id property
+// on req.user, no need to keep this code.
+// var usersController = require('../controllers/users')
+// router.get('/', usersController.home);
 
 // The root route renders our only view
 router.get('/', function(req, res) {
