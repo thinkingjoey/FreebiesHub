@@ -1,5 +1,3 @@
-var event = require('../models/Event');
-
 // function index(req, res) {
   //This part of code is from the lab, please do not delete
   //We use it as a reference
@@ -36,4 +34,3 @@ function index (req, res, next) {
 module.exports = {
   index: index
 };
-
