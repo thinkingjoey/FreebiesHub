@@ -21,6 +21,7 @@ liTemplate = _.template(  `<li class="eventItem">
       <span><%= name %></span><br>
       <!-- this should be the event URL -->
       <img src="<%= url %>" class="eventURL">
+
   </li>`);
 events.forEach(function(event){
   var rendered = liTemplate(event)

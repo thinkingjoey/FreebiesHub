@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Lalezar font -->
     <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <!-- Shrikhand font -->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 </head>
 <body>
     <!-- navbar for login -->
@@ -24,26 +26,27 @@
       <div class="container">
           <h1 id="title"> Freebies Hub </h1>
           <h1 id="subtitle"> Nothing is too good to be true </h1>
-          <h1 id="signup_button">
+          <!-- <h1 id="signup_button">
               <a href="/auth/google">Sign Up</a>
-          </h1>
+          </h1> -->
       </div>
     </header>
     <!-- free event search -->
     <div id="search">
         <div id="freeEvent">
             <input type="text" id="location" placeholder=" zip code -OR- city, state">
-            <input type="number" id="radius" placeholder="radius (mi)">
-            <input type="date" id="date1" placeholder="first date">
-            <input type="date" id="date2" placeholder="last date">
-            <input type="text" id="keywords" placeholder="search keywords">
+            <!-- <input type="number" id="radius" placeholder="radius (mi)"> -->
+            <input placeholder="start date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date1">
+            <input placeholder="end date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date2">
+            <input type="text" id="keywords" placeholder=" keywords">
             <button id="submit">Submit</button>
         </div>
     </div>
     <div id="results"></div>
-    <!-- slideshow -->
-    <div id="moreFree">
-    </div>
+    <!-- find free event near your location -->
+    <!-- <div id="moreFree">
+      <h1 id="moreFreeText">find free event </h1>
+    </div> -->
 
     <div id="downloads">
       <div class="download" id="ibooks">ebooks</div>

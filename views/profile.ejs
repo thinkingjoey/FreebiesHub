@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>profile</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/profile.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
 </head>
 
 <body>
-    <h1> Welcome <$= user.name $></h1>
+  <div id="headerWrap">
+  <h1  id="userName"> Hello, <$= user.name $> </h1>
+  <h1 id="home"><a href="/">home</a><h1>
+  </div>
+
+  <div class="grid__item">
+      <a class="link link--Saved" href="#"> Saved events <span> free = awesome </span></a>
     <!-- HTML Template -->
     <ul id="eventList"></ul>
-
+  </div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 

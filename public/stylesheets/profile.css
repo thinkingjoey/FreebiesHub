@@ -1,0 +1,114 @@
+#headerWrap{
+  font-family: 'Poiret One', cursive;
+  width: 100%;
+  height: 50px;
+}
+#userName{
+  float: left;
+  padding-left: 3%;
+}
+#home {
+  float: right;
+  padding-right: 3%;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: #9e9ba4;
+}
+a:hover {
+  color: rgba(73, 143, 225, 0.85);
+}
+
+ul{
+  font-family: 'Poiret One', cursive;
+  list-style-type: none;
+}
+
+/*Profile page css effect*/
+/* Grid */
+.grid__item {
+	height: calc(90vh - 40px);
+	min-height: 400px;
+  max-height: 100%;
+	max-width: calc(100vw - 40px);
+	background: #DDD;
+	margin: 20px;
+	padding: 10px;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+  border-radius: 10px;
+	/*display: -webkit-flex;*/
+	/*display: flex;*/
+	/*-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-transform: translate3d(0,0,0);  Solves Safari bug because of SVG clipping mask*/
+}
+*, *:after, *:before { box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #fff;
+	color: #1e1a1b;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Saved  Event*/
+.link--Saved {
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 5em;
+	padding: 0 10px 20px;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+  text-align: center;
+}
+
+.link--Saved:hover {
+	color: #1e1a1b;
+}
+
+.link--Saved:hover::before {
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+.link--Saved span {
+	font-size: 40%;
+	font-weight: 400;
+	position: absolute;
+	right: 15px;
+	color: #e53369;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translate3d(-10px,-10px,0);
+	transform: translate3d(-10px,-10px,0);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.link--Saved:hover span {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* General link styles */
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 4em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+/*Profile page css effect*/
