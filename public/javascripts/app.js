@@ -57,12 +57,13 @@
 
 //$('[type="radio"]').on('change', function() { render(); });
 
+// freebies slideToggle effect
 $("#ibooks").click(function() {
-  $("#ibookslist").toggle();
+  $("#ibookslist").slideToggle();
   });
 
   $("#trials").click(function() {
-    $("#trialslist").toggle();
+    $("#trialslist").slideToggle();
     });
 
 $("#submit").click(function () {
@@ -86,6 +87,3 @@ $("#submit").click(function () {
         $("#results").html(`<h3>${res["events"][0]["name"]["html"]}</h3><p>${res["events"][0]["description"]["html"]}</p>`)
     })
 })
-
-
-

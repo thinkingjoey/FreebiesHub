@@ -1,8 +1,3 @@
-/* still working on it, it's for the slideshow
-.mySlides {
-  display:none;
-}*/
-
 header {
   height: 560px;
   background: url('../images/freeCover.jpeg')
@@ -89,34 +84,58 @@ h1{
   #downloads {
     display: block;
     margin: 0 auto;
+    width: 90%;
   }
 
-  .download {
-    display: inline-block;
-    margin-top: 50px;
-    font-family: BritannicBold;
+  #ibooks, #coupons, #trials {
+    display: block;
+    border-radius: 10px;
+    float: left;
+    height:200px;
+    margin-right: 1%;
+    margin-top: 2%;
+    font-family: 'Lalezar', cursive;
+    font-size:50px;
     color: white;
     text-align:center;
-    line-height:175px;
-    width:25%;
-    height:175px;
-    font-size:50px;
+    line-height: 180px;
   }
 
-
+/*more freebies icons*/
 #ibooks {
   background-image: url("../images/ibooks.jpeg");
   background-size: cover;
+  width: 33%;
 }
 
 #coupons {
   background-image: url("../images/coupons.jpeg");
   background-size: cover;
+  width: 32%;
 }
 
 #trials {
   background-image: url("../images/apple-gear-looking-pretty.jpg");
   background-size: cover;
+  width: 32%;
+}
+
+/*freebies list*/
+#ibookslist, #trialslist {
+  background-color: rgba(73, 143, 225, 0.85);
+  float: left;
+  height: 300px;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 18px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 a:active {
@@ -169,21 +188,4 @@ width: 15%;
 width: 7%;
 background-color: rgba(73, 143, 225, 0.85);
 color: white;
-}
-
-#ibookslist, #trialslist {
-  background-color: rgba(73, 143, 225, 0.85);
-  float: left;
-  height: 300px;
-  margin-right: 1%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-size: 18px;
-  display: block;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 15px;
-  padding-top: 20px;
 }

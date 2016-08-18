@@ -1,9 +1,6 @@
 //Users controllers go here
 
 
-
-
-
 // Billy suggested the following code;
 // MCO refactored it to /routes/index.js to
 // be consistent with pre-existing code.
@@ -17,3 +14,10 @@
 // module.exports = {
 //     home: home
 // }
+
+
+function profile (req, res, next) {
+  if(req.user) {
+    res.redirect('/profile');
+  }
+};

@@ -1,10 +1,8 @@
-var express = require('express');
-
-//don't touch
 //Google API stuffs here
-
+var express = require('express');
 var router = express.Router();
 var passport = require('passport');
+var usersController = require('../controllers/users')
 
 // Billy told us to add these two lines to display
 // Google user ID.  Since this is the _id property
@@ -12,17 +10,10 @@ var passport = require('passport');
 // var usersController = require('../controllers/users')
 // router.get('/', usersController.home);
 
+
 // The root route renders our only view
 router.get('/', function(req, res) {
   res.render('index', { user: req.user });
-});
-
-router.get('/trials', function(req, res) {
-  res.render('trials', { user: req.user });
-});
-
-router.get('/ebooks', function(req, res) {
-  res.render('ebooks', { user: req.user });
 });
 
 // Google OAuth login route
@@ -35,10 +26,17 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect : '/',
+    //chnaging from '/' to '/profile'
+    successRedirect : '/profile',
     failureRedirect : '/'
   }
 ));
+
+//go to the user's profile
+router.get('/profile', function(req, res) {
+  res.render('profile', { user: req.user });
+});
+
 
 // OAuth logout route
 router.get('/logout', function(req, res){
