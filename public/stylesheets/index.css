@@ -138,11 +138,63 @@ ul {
   padding-top: 20px;
 }
 
-a:active {
-  color: white;
+a:link {
+  color:white;
+  text-decoration: none;
 }
+
 a:visited {
-  color: white;
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+a:active {
+  color:white;
+  text-decoration: none;
+}
+#ibookslist a:link {
+  color:white;
+  text-decoration: none;
+}
+
+#ibookslist a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+#ibookslist a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+#ibookslist a:active {
+  color:white;
+  text-decoration: none;
+}
+
+#trialslist a:link {
+  color:white;
+  text-decoration: none;
+}
+
+#trialslist a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+#trialslist a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+#trialslist a:active {
+  color:white;
+  text-decoration: none;
 }
 
 #search{
