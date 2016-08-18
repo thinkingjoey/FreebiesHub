@@ -1,29 +1,9 @@
 var express = require('express');
-
-//don't touch
-//Google API stuffs here
-
 var router = express.Router();
+
+//////////////////////////////////////
+////////// Begin Google API //////////
 var passport = require('passport');
-
-// Billy told us to add these two lines to display
-// Google user ID.  Since this is the _id property
-// on req.user, no need to keep this code.
-// var usersController = require('../controllers/users')
-// router.get('/', usersController.home);
-
-// The root route renders our only view
-router.get('/', function(req, res) {
-  res.render('index', { user: req.user });
-});
-
-router.get('/trials', function(req, res) {
-  res.render('trials', { user: req.user });
-});
-
-router.get('/ebooks', function(req, res) {
-  res.render('ebooks', { user: req.user });
-});
 
 // Google OAuth login route
 router.get('/auth/google', passport.authenticate(
@@ -35,7 +15,8 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect : '/',
+    // Change from '/' to '/profile'
+    successRedirect : '/profile',
     failureRedirect : '/'
   }
 ));
@@ -46,4 +27,46 @@ router.get('/logout', function(req, res){
   res.redirect('/');
 });
 
+//////////  End Google API  //////////
+//////////////////////////////////////
+
+
+//////////////////////////////////////
+///////// Begin landing page /////////
+
+// The root route renders our only view
+router.get('/', function(req, res) {
+  res.render('index', { user: req.user });
+});
+
+// Free trials page
+router.get('/trials', function(req, res) {
+  res.render('trials', { user: req.user });
+});
+
+// Free ebooks page
+router.get('/ebooks', function(req, res) {
+  res.render('ebooks', { user: req.user });
+});
+
+////////// End landing page //////////
+//////////////////////////////////////
+
+
+//////////////////////////////////////
+//////////// Begin Users /////////////
+
+// Mike's Deprecated Code
+// var usersController = require('../controllers/users')
+// router.get('/profile', usersController.show);
+
+//go to the user's profile
+router.get('/profile', function(req, res) {
+  res.render('profile', { user: req.user });
+});
+
+///////////// End Users //////////////
+//////////////////////////////////////
+
 module.exports = router;
+

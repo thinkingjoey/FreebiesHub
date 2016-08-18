@@ -1,0 +1,26 @@
+// THIS IS A SCRATCH FILE; CODE IS NOT USED EXCEPT FOR REFERENCE.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+    <h2>Welcome <$= user.name $></h2>
+    <p>email: <$= user.email $></p>
+    <ul>
+        <$ user.savedEvents.forEach( function(e,i) { $>
+            <li>Saved Event #<$= i $>: <a href="<$= e $>">EVENT NAME</a>
+            <form method="POST" action="/<$= user.googleId $>/<$= i $>?_method=DELETE">
+                <button type="submit">Delete</button>
+            </form>
+            </li>
+        <$ }); $>
+    </ul>
+
+</body>
+</html>

@@ -1,19 +1,14 @@
-//Users controllers go here
+var User = require('../models/User')
 
-
-
-
-
-// Billy suggested the following code;
-// MCO refactored it to /routes/index.js to
-// be consistent with pre-existing code.
-// function home (req, res, next) {
-//     if(req.user) {
-//         console.log(req.user)
-//         console.log(req.user._id)
-//     }
-//     next()
+// function show (req, res, next) {
+//     User.findOne({googleId: req.user.googleId }, function (err, user) {
+//         if (err) console.log(err)
+//         res.render('dashboard', { user: user })
+//         // res.json(user)
+//         }
+//     )
 // }
-// module.exports = {
-//     home: home
-// }
+
+module.exports = {
+    // show: show,
+}
