@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 Planning
 =======
 # project3_freebiesPlanning
->>>>>>> 0b02465937391365f57720ed983e70b1a8fe361b
 =========
 Freebies Hub is a one-stop shop for a variety of free things on the internet. On Freebies Hub, users can find free events in their area, download free ebooks and coupons, and find links to free software trials. In addition, registered users can save free events to their profiles.
 
@@ -52,7 +50,6 @@ Deployment and Cloud Storage
 Deployment
 ----------
 * Heroku
->>>>>>> 0b02465937391365f57720ed983e70b1a8fe361b
 
 Other
 ------
@@ -61,10 +58,8 @@ Other
 Next Steps
 ===========
 
-
 Links
 ===========
-<<<<<<< HEAD
 * https://trello.com/b/MK3GXBUu/project-freebies-hub
 =======
 
