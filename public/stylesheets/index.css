@@ -130,8 +130,36 @@ h1{
   width: 32%;
 }
 
+#lists {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#ibooklistcontainer {
+  float: left;
+  height: 300px;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 18px;
+  display: block;
+  width: 33%;
+}
+
+#trialslistcontainer {
+  float: left;
+  height: 300px;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 18px;
+  display: block;
+  width: 33%;
+}
+
 /*freebies list*/
-#ibookslist, #trialslist {
+#ibookslist, #trialslist, #couponslist {
   background-color: rgba(73, 143, 225, 0.85);
   float: left;
   height: 300px;
@@ -140,7 +168,22 @@ h1{
   margin-bottom: 2%;
   font-size: 18px;
   display: block;
+  width: 31%;
+  border-radius: 10px;
 }
+
+#ibookslist {
+  width: 100%;
+  margin-top: 0%;
+  border-radius: 10px;
+}
+
+#trialslist {
+  width: 100%;
+  margin-top: 0%;
+  border-radius: 10px;
+}
+
 
 ul {
   list-style-type: none;
@@ -202,10 +245,30 @@ a:active {
   text-decoration: none;
 }
 
-#trialslist a:active {
+#coupons a:active {
   color:white;
   text-decoration: none;
 }
+#coupons a:link {
+  color:white;
+  text-decoration: none;
+}
+
+#coupons a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+#coupons a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+#coupons a:active {
+  color:white;
+  text-decoration: none;
+}
+
 
 #search{
   height: 80px;
