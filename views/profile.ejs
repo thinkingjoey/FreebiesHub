@@ -20,12 +20,25 @@
     <!-- HTML Template -->
     <div id="eventList"></div>
   </div>
+    <!-- free event search -->
+    <div id="search">
+        <div id="freeEvent">
+            <input type="text" id="location" placeholder=" zip code -OR- city, state">
+            <!-- <input type="number" id="radius" placeholder="radius (mi)"> -->
+            <input placeholder="start date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date1">
+            <input placeholder="end date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date2">
+            <input type="text" id="keywords" placeholder=" keywords">
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <div id="results"></div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
     <!-- Underscorejs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="/javascripts/moment.js"></script>
+    <script src="/javascripts/app.js"></script>
     <script src="javascripts/profile.js"></script>
 </body>
 

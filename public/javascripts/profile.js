@@ -10,11 +10,7 @@
 // start: String,
 // end: String
 
-var events = [{
-  name: "Music",
-  description: "free party",
-  url: '#'
-}];
+var events = [];
 
 liTemplate = _.template(  `<li class="eventItem">
       <!-- this should be the event title -->
@@ -49,7 +45,7 @@ $(document).ready(function () {
                     </tr>
                 `
             })
-            table = `<h2>Your Saved Events</h2><table><tr><th>Event</th><th>Date</th><th>Time</th><th></th>${ table }</table>`
+            table = `<table><tr><th>Event</th><th>Date</th><th>Time</th><th></th>${ table }</table>`
             $('#eventList').html(table)
        }
    })
