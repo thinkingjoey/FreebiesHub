@@ -24,6 +24,30 @@ function index (req, res, next) {
     }).catch(err => console.log(err))
 }
 
+function show (req, res, next) {
+    var user = req.user
+    var savedEventPromises = []
+    req.user.events.forEach( function(e) {
+        var ebq = rp.get({
+            uri: `https://www.eventbriteapi.com/v3/events/${e.substring(1)}/?token=${process.env.EB_TOKEN}`,
+            json: true
+        })
+        // push ebq promise to savedEventPromises
+        savedEventPromises.push(ebq)
+        // ebq.then(response => { savedEventPromises.push(response) })
+    })
+    Promise.all(savedEventPromises)
+        .then(responses => {
+            console.log(responses)
+            res.json({savedEvents: responses, user:user})
+        }).catch(err => console.log(err))
+        // .then(function (data) {
+        //     // data is an array containing the responses from ebq
+        // })
+    // res.json({savedEvents: savedEvents, user:user})
+}
+
 module.exports = {
-  index: index
+  index: index,
+  show: show
 };
