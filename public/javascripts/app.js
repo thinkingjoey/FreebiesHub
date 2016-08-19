@@ -8,16 +8,17 @@
 
 // freebies slideToggle effect
 $("#ibooks").click(function() {
-  $("#ibookslist").slideToggle();
-  });
+    $("#ibookslist").slideToggle();
+    });
 
-  $("#trials").click(function() {
+$("#trials").click(function() {
     $("#trialslist").slideToggle();
     });
 
 $("#submit").click(function () {
     var location = $("#location").val()
-    var radius = $("#radius").val()
+    // var radius = $("#radius").val()
+    var radius = 15
     var firstDate = $("#date1").val()
     var lastDate = $("#date2").val()
     var keywords = $("#keywords").val()
@@ -34,22 +35,68 @@ $("#submit").click(function () {
             $('#results').html('<p>No Free Events meeting search criteria</p>')
        } else {
 
-            var list = ""
+            var table = ""
+            var label = ""
             res.ebres.events.forEach( function(e,i) {
-                list = list + `
-                    <li>
-                    <a href="${ e.url }" target="_blank">${ e.name.text }</a>
-                    on ${ moment.utc(e.start.local).format('MMMM Do YYYY, h:mm a') }
-                    <form   method="PUT"
-                            action="/events/${ e.id }">
-                            <button type="submit">Save</button>
-                    </form>
-                    </li>
+                label = "Save"
+                if (res.user) {
+                    if ( res.user.events.indexOf(`e${ e.id }`) > -1 ) {
+                        label = "Delete"
+                    }
+                }
+                table = table + `
+                    <tr>
+                    <td><a href="${ e.url }" target="_blank">${ e.name.text }</a></td>
+                    <td>${ moment.utc(e.start.local).format('MMMM D, YYYY') }</td>
+                    <td>${ moment.utc(e.start.local).format('h:mm a') }</td>
+                    <td><button class="event-button" id="e${ e.id }">${label}</button></td>
+                    </tr>
                 `
             })
-            list = `<h2>Free Events Near You</h2><ul>${ list }</ul>`
-            $('#results').html(list)
+            table = `<h2>Free Events Near You</h2><table><tr><th>Event</th><th>Date</th><th>Time</th><th></th>${ table }</table>`
+            $('#results').html(table)
        }
    })
+})
 
+$(document).on('click', '.event-button', function (evt) {
+    if ( $(evt.target).text() == "Save" ) {
+        $.post("/users", {
+            etid: evt.target.id,
+        })
+        .then(function (res) {
+            if (res.error) {
+                if (res.failedSave) {
+                    alert("Failed save...")
+                } else {
+                    alert("Logging in...")
+                    window.location = '/auth/google'
+                }
+            } else {
+                $(`#${res.etid}`).text('Delete')
+            }
+        })
+    } else {
+        $.ajax({
+            method: "DELETE",
+            url: "/users",
+            data: { etid: evt.target.id }
+        })
+        // $.ajax.delete("/users", {
+        //     etid: evt.target.id,
+        // })
+        .then(function (res) {
+
+            if (res.error) {
+                if (res.failedDelete) {
+                    alert("Failed delete...")
+                } else {
+                    alert("Not logged in...")
+                    window.location = '/auth/google'
+                }
+            } else {
+                $(`#${res.etid}`).text('Save')
+            }
+        })
+    }
 })
