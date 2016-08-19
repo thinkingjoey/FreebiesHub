@@ -6,6 +6,7 @@
 
 //$('[type="radio"]').on('change', function() { render(); });
 
+
 // freebies slideToggle effect
 $("#ibooks").click(function() {
   $("#ibookslist").slideToggle();
@@ -53,7 +54,7 @@ $("#submit").click(function() {
                     <td id="td-URL"><a href="${ e.url }" target="_blank">${ e.name.text }</a></td>
                     <td id="td-Date">${ moment.utc(e.start.local).format('MMMM D, YYYY') }</td>
                     <td id="td-Time">${ moment.utc(e.start.local).format('h:mm a') }</td>
-                    <td><button class="event-button" id="e${ e.id }">${label}</button></td>
+                    <td id="td-button"><button class="event-button" id="e${ e.id }">${label}</button></td>
                     </tr>
                 `
         })
@@ -77,7 +78,7 @@ $(document).on('click', '.event-button', function(evt) {
             window.location = '/auth/google'
           }
         } else {
-          $(`#${res.etid}`).text('Del')
+          $(`#${res.etid}`).text('Delete')
         }
       })
   } else {
