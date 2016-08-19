@@ -10,11 +10,7 @@
 // start: String,
 // end: String
 
-var events = [{
-  name: "Music",
-  description: "free party",
-  url: '#'
-}];
+var events = [];
 
 liTemplate = _.template(  `<li class="eventItem">
       <!-- this should be the event title -->

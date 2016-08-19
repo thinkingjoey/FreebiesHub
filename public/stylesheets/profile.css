@@ -13,7 +13,7 @@
 }
 a:link, a:visited{
   text-decoration: none;
-  color: #9e9ba4;
+  color: black;
 }
 a:hover {
   color: rgba(73, 143, 225, 0.85);
@@ -111,3 +111,79 @@ body {
 	color: #9e9ba4;
 	display: inline-block;
 }
+
+#search{
+  height: 80px;
+}
+/*search boxes for free event*/
+#freeEvent {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+/*search bar for free events*/
+#location, #radius, #date1, #date2, #keywords, #submit {
+display: block;
+border-radius: 10px;
+float: left;
+height: 50px;
+margin-right: 1%;
+margin-top: 2%;
+margin-bottom: 1%;
+font-family: 'Lalezar', cursive;
+font-size: 15px;
+border: 1px solid #CFCFC9;
+color: grey;
+text-align: center;
+}
+#location {
+  width: 30%;
+}
+/*#radius {
+  width: 10%;
+}*/
+#date1, #date2 {
+width: 15%;
+}
+#keywords {
+  width: 25%;
+}
+#submit {
+width: 7%;
+background-color: rgba(73, 143, 225, 0.85);
+color: white;
+}
+
+/*search results*/
+
+#results{
+  border-radius: 20px;
+  margin: 10px;
+  background: rgba(73, 143, 225, 0.85);
+  opacity: .9;
+}
+
+#th-Date, #th-Time, #th-Event{
+  font-family: 'Courier New';
+  padding: 1%;
+  color: white;
+  font-size: 20px;
+}
+
+#td-URL{
+  color: white;
+  padding: 1%;
+  width: 70%
+}
+#td-Date{
+  color: white;
+  padding: 1%;
+  width: 15%;
+}
+
+#td-Time{
+  color: white;
+  padding: 1%;
+  width: 15%;
+}
+
