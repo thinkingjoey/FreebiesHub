@@ -26,7 +26,6 @@ Development
 
 * HTML
 * CSS
-* Materialize
 * JavaScript
 * jQuery
 
@@ -46,7 +45,7 @@ Deployment and Cloud Storage
 ----------
 * Heroku
 * Amazon S3
-=======
+
 Deployment
 ----------
 * Heroku
