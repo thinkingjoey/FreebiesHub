@@ -91,6 +91,57 @@ h1{
 
 }
 
+#results{
+  border-radius: 20px;
+  margin: 10px;
+  background: rgba(73, 143, 225, 0.85);
+  opacity: .9;
+}
+
+#th-Date, #th-Time, #th-Event{
+  font-family: 'Courier New';
+  padding: 1%;
+  color: white;
+  font-size: 20px;
+}
+
+#td-URL{
+  color: white;
+  padding: 1%;
+  width: 70%
+}
+#td-Date{
+  color: white;
+  padding: 1%;
+  width: 15%;
+}
+
+#td-Time{
+  color: white;
+  padding: 1%;
+  width: 15%;
+}
+
+#search-h2{
+  font-family: 'Lalezar', cursive;
+  text-align: center;
+  color: white;
+}
+.event-button{
+      background-color: white;
+      border: none;
+      color: rgba(73, 143, 225, 0.85) ;
+      padding: 12px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 6px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-family: 'Raleway', sans-serif;
+  }
+
   #downloads {
     display: block;
     margin: 0 auto;
@@ -155,7 +206,7 @@ h1{
   margin-bottom: 2%;
   font-size: 18px;
   display: block;
-  width: 33%;
+  width: 32%;
 }
 
 /*freebies list*/
@@ -170,6 +221,9 @@ h1{
   display: block;
   width: 31%;
   border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  opacity: .8;
+  padding: 1%;
 }
 
 #ibookslist {
@@ -269,7 +323,6 @@ a:active {
   text-decoration: none;
 }
 
-
 #search{
   height: 80px;
 }
@@ -287,7 +340,7 @@ float: left;
 height: 50px;
 margin-right: 1%;
 margin-top: 2%;
-margin-bottom: 2%;
+margin-bottom: 1%;
 font-family: 'Lalezar', cursive;
 font-size: 15px;
 border: 1px solid #CFCFC9;
@@ -304,7 +357,6 @@ text-align: center;
 width: 15%;
 }
 #keywords {
-  margin-left: 1%;
   width: 25%;
 }
 #submit {
