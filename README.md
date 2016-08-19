@@ -37,7 +37,7 @@ Technologies
 * Node.js
 * Mongo
 
-<<<<<<< HEAD
+
 Third-party API
 ----------------
 * EventBrite
