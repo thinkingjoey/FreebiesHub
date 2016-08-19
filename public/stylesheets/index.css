@@ -137,9 +137,7 @@ h1{
   width: 33%;
 }
 
-/*freebies list*/
-#ibookslist, #trialslist {
-  background-color: rgba(73, 143, 225, 0.85);
+#trialslistcontainer {
   float: left;
   height: 300px;
   margin-right: 1%;
@@ -150,10 +148,32 @@ h1{
   width: 33%;
 }
 
+/*freebies list*/
+#ibookslist, #trialslist, #couponslist {
+  background-color: rgba(73, 143, 225, 0.85);
+  float: left;
+  height: 300px;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 18px;
+  display: block;
+  width: 31%;
+  border-radius: 10px;
+}
+
 #ibookslist {
   width: 100%;
   margin-top: 0%;
+  border-radius: 10px;
 }
+
+#trialslist {
+  width: 100%;
+  margin-top: 0%;
+  border-radius: 10px;
+}
+
 
 ul {
   list-style-type: none;

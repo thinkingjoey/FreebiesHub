@@ -15,6 +15,10 @@ $("#ibooks").click(function() {
     $("#trialslist").slideToggle();
     });
 
+    $("#coupons").click(function() {
+      $("#couponslist").slideToggle();
+      });
+
 $("#submit").click(function () {
     var location = $("#location").val()
     var radius = $("#radius").val()
