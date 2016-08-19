@@ -273,14 +273,12 @@ a:active {
 #search{
   height: 80px;
 }
-
 /*search boxes for free event*/
 #freeEvent {
   width: 80%;
   display: block;
   margin: 0 auto;
 }
-
 /*search bar for free events*/
 #location, #radius, #date1, #date2, #keywords, #submit {
 display: block;

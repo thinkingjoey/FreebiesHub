@@ -16,7 +16,8 @@ router.get('/oauth2callback', passport.authenticate(
   'google',
   {
     // Change from '/' to '/profile'
-    successRedirect : '/profile',
+    // successRedirect : '/profile',
+    successRedirect : '/',
     failureRedirect : '/'
   }
 ));
@@ -32,9 +33,24 @@ router.get('/logout', function(req, res){
 
 
 //////////////////////////////////////
-///////// Begin landing page /////////
+//////////// Begin Users /////////////
 
-// The root route renders our only view
+var usersController = require('../controllers/users')
+
+// put an event to the user's profile
+router.post('/users', usersController.post)
+
+// delete an event from the user's profile
+router.delete('/users', usersController.destroy)
+
+///////////// End Users //////////////
+//////////////////////////////////////
+
+
+//////////////////////////////////////
+///////// Begin Uncontrolled /////////
+
+// Root page
 router.get('/', function(req, res) {
   res.render('index', { user: req.user });
 });
@@ -49,24 +65,14 @@ router.get('/ebooks', function(req, res) {
   res.render('ebooks', { user: req.user });
 });
 
-////////// End landing page //////////
-//////////////////////////////////////
-
-
-//////////////////////////////////////
-//////////// Begin Users /////////////
-
-// Mike's Deprecated Code
-// var usersController = require('../controllers/users')
-// router.get('/profile', usersController.show);
-
-//go to the user's profile
+// Profile page
 router.get('/profile', function(req, res) {
   res.render('profile', { user: req.user });
 });
 
-///////////// End Users //////////////
+////////// End Uncontrolled //////////
 //////////////////////////////////////
+
 
 module.exports = router;
 
