@@ -4,7 +4,7 @@ Planning
 =========
 Freebies Hub is a one-stop shop for a variety of free things on the internet. On Freebies Hub, users can find free events in their area, download free ebooks and coupons, and find links to free software trials. In addition, registered users can save free events to their profiles.
 
-
+## see demo here: https://vast-bayou-41984.herokuapp.com/
 
 Original Concept and Design Approach
 ====================================
